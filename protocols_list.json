@@ -1,0 +1,614 @@
+[
+  {
+    "protocol_name": "QUIC",
+    "layer": "transport",
+    "category": "transport",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "UDP",
+    "layer": "transport",
+    "category": "transport",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "SCTP",
+    "layer": "transport",
+    "category": "transport",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "TCP",
+    "layer": "transport",
+    "category": "transport",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "TACACS",
+    "layer": "security",
+    "category": "security",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "OPENVPN",
+    "layer": "security",
+    "category": "security",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "RADIUS",
+    "layer": "security",
+    "category": "security",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "KERBEROS",
+    "layer": "security",
+    "category": "security",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "IKE",
+    "layer": "security",
+    "category": "security",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "RADIUSACCT",
+    "layer": "security",
+    "category": "security",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "TLS",
+    "layer": "security",
+    "category": "security",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "WIREGUARD",
+    "layer": "security",
+    "category": "security",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "IPV4",
+    "layer": "network",
+    "category": "network",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "IGMP",
+    "layer": "network",
+    "category": "network",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "ICMPV6",
+    "layer": "network",
+    "category": "network",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "GTPU",
+    "layer": "network",
+    "category": "network",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "GTPC",
+    "layer": "network",
+    "category": "network",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "GRE",
+    "layer": "network",
+    "category": "network",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "L2TP",
+    "layer": "network",
+    "category": "network",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "MPLS",
+    "layer": "network",
+    "category": "network",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "ARP",
+    "layer": "network",
+    "category": "network",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "ICMP",
+    "layer": "network",
+    "category": "network",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "IPV6",
+    "layer": "network",
+    "category": "network",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "VLAN",
+    "layer": "datalink",
+    "category": "datalink",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "PPP",
+    "layer": "datalink",
+    "category": "datalink",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "PPPOE",
+    "layer": "datalink",
+    "category": "datalink",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "LACP",
+    "layer": "datalink",
+    "category": "datalink",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "LLDP",
+    "layer": "datalink",
+    "category": "datalink",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "STP",
+    "layer": "datalink",
+    "category": "datalink",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "MQTT",
+    "layer": "iot",
+    "category": "iot",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "protocol_name": "COAP",
+    "layer": "iot",
+    "category": "iot",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "protocol_name": "CAPWAP",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "NFS",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "TELNET",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "SIP",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "RDP",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "NBNS",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "TFTP",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "SMTP",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "SNMP",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "POP3",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "LLMNR",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "SMB",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "SSDP",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "SSH",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "DHCPV6",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "MDNS",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "SYSLOG",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "RTP",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "HTTP",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "LDAP",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "DHCP",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "FTP",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "DNS",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "NTP",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "IMAP",
+    "layer": "application",
+    "category": "application",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "PIM",
+    "layer": "routing",
+    "category": "routing",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "EIGRP",
+    "layer": "routing",
+    "category": "routing",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "ISIS",
+    "layer": "routing",
+    "category": "routing",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "ISIS_CLNS",
+    "layer": "routing",
+    "category": "routing",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "OSPF",
+    "layer": "routing",
+    "category": "routing",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "BFD",
+    "layer": "routing",
+    "category": "routing",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "RIP",
+    "layer": "routing",
+    "category": "routing",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "VRRPV3",
+    "layer": "routing",
+    "category": "routing",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "LDP",
+    "layer": "routing",
+    "category": "routing",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "BGP",
+    "layer": "routing",
+    "category": "routing",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "HSRP",
+    "layer": "routing",
+    "category": "routing",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "protocol_name": "VRRP",
+    "layer": "routing",
+    "category": "routing",
+    "rfc": [],
+    "port": [],
+    "status": "pending",
+    "priority": "high"
+  }
+]

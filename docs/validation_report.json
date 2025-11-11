@@ -1,0 +1,961 @@
+{
+  "summary": {
+    "total": 68,
+    "passed": 0,
+    "failed": 68
+  },
+  "results": [
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/transport/quic_standard.pcap",
+      "expected_protocol": "quic",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/transport/udp_standard.pcap",
+      "expected_protocol": "udp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/transport/sctp_standard.pcap",
+      "expected_protocol": "sctp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/transport/tcp_standard.pcap",
+      "expected_protocol": "tcp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/security/tacacs_standard.pcap",
+      "expected_protocol": "tacacs",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/security/openvpn_standard.pcap",
+      "expected_protocol": "openvpn",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/security/radius_standard.pcap",
+      "expected_protocol": "radius",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/security/kerberos_standard.pcap",
+      "expected_protocol": "kerberos",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/security/ike_standard.pcap",
+      "expected_protocol": "ike",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/security/radiusacct_standard.pcap",
+      "expected_protocol": "radiusacct",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/security/tls_standard.pcap",
+      "expected_protocol": "tls",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/security/wireguard_standard.pcap",
+      "expected_protocol": "wireguard",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/network/ipv4_standard.pcap",
+      "expected_protocol": "ipv4",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/network/igmp_standard.pcap",
+      "expected_protocol": "igmp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/network/icmpv6_standard.pcap",
+      "expected_protocol": "icmpv6",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/network/gtpu_standard.pcap",
+      "expected_protocol": "gtpu",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/network/gtpc_standard.pcap",
+      "expected_protocol": "gtpc",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/network/gre_standard.pcap",
+      "expected_protocol": "gre",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/network/l2tp_standard.pcap",
+      "expected_protocol": "l2tp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/network/mpls_standard.pcap",
+      "expected_protocol": "mpls",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/network/arp_standard.pcap",
+      "expected_protocol": "arp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/network/icmp_standard.pcap",
+      "expected_protocol": "icmp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/network/ipv6_standard.pcap",
+      "expected_protocol": "ipv6",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/datalink/vlan_standard.pcap",
+      "expected_protocol": "vlan",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/datalink/ppp_standard.pcap",
+      "expected_protocol": "ppp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/datalink/pppoe_standard.pcap",
+      "expected_protocol": "pppoe",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/datalink/lacp_standard.pcap",
+      "expected_protocol": "lacp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/datalink/lldp_standard.pcap",
+      "expected_protocol": "lldp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/datalink/stp_standard.pcap",
+      "expected_protocol": "stp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/iot/mqtt_standard.pcap",
+      "expected_protocol": "mqtt",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/iot/coap_standard.pcap",
+      "expected_protocol": "coap",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/capwap_standard.pcap",
+      "expected_protocol": "capwap",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/nfs_standard.pcap",
+      "expected_protocol": "nfs",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/telnet_standard.pcap",
+      "expected_protocol": "telnet",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/sip_standard.pcap",
+      "expected_protocol": "sip",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/rdp_standard.pcap",
+      "expected_protocol": "rdp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/nbns_standard.pcap",
+      "expected_protocol": "nbns",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/tftp_standard.pcap",
+      "expected_protocol": "tftp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/smtp_standard.pcap",
+      "expected_protocol": "smtp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/snmp_standard.pcap",
+      "expected_protocol": "snmp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/pop3_standard.pcap",
+      "expected_protocol": "pop3",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/llmnr_standard.pcap",
+      "expected_protocol": "llmnr",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/smb_standard.pcap",
+      "expected_protocol": "smb",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/ssdp_standard.pcap",
+      "expected_protocol": "ssdp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/ssh_standard.pcap",
+      "expected_protocol": "ssh",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/dhcpv6_standard.pcap",
+      "expected_protocol": "dhcpv6",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/mdns_standard.pcap",
+      "expected_protocol": "mdns",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/syslog_standard.pcap",
+      "expected_protocol": "syslog",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/rtp_standard.pcap",
+      "expected_protocol": "rtp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/http_standard.pcap",
+      "expected_protocol": "http",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/ldap_standard.pcap",
+      "expected_protocol": "ldap",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/dhcp_standard.pcap",
+      "expected_protocol": "dhcp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/ftp_standard.pcap",
+      "expected_protocol": "ftp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/dns_standard.pcap",
+      "expected_protocol": "dns",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/ntp_standard.pcap",
+      "expected_protocol": "ntp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/application/imap_standard.pcap",
+      "expected_protocol": "imap",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/routing/pim_standard.pcap",
+      "expected_protocol": "pim",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/routing/eigrp_standard.pcap",
+      "expected_protocol": "eigrp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/routing/isis_standard.pcap",
+      "expected_protocol": "isis",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/routing/isis_clns_standard.pcap",
+      "expected_protocol": "isis_clns",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/routing/ospf_standard.pcap",
+      "expected_protocol": "ospf",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/routing/bfd_standard.pcap",
+      "expected_protocol": "bfd",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/routing/rip_standard.pcap",
+      "expected_protocol": "rip",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/routing/vrrpv3_standard.pcap",
+      "expected_protocol": "vrrpv3",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/routing/ldp_standard.pcap",
+      "expected_protocol": "ldp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/routing/bgp_standard.pcap",
+      "expected_protocol": "bgp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/routing/hsrp_standard.pcap",
+      "expected_protocol": "hsrp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    },
+    {
+      "pcap": "/Volumes/DATA/code/learn/protocol_samples/protocols/routing/vrrp_standard.pcap",
+      "expected_protocol": "vrrp",
+      "valid": false,
+      "checks": {
+        "error": "Not a supported capture file",
+        "checks": {
+          "file_readable": false,
+          "packets_exist": false,
+          "protocol_correct": false,
+          "no_corruption": false
+        }
+      }
+    }
+  ]
+}

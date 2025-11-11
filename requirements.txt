@@ -1,0 +1,6 @@
+scapy
+pyshark
+dpkt
+kamene
+requests
+beautifulsoup4

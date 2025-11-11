@@ -1,0 +1,52 @@
+name: PCAP Generation and Validation
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * 0'
+
+jobs:
+  generate-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tshark tcpdump
+          pip install -r requirements.txt || pip install scapy pyshark
+      - name: Generate missing PCAPs
+        run: python scripts/generate_all.py --mode known --protocols-root protocols --pcaps-root pcaps --incremental --progress-file /tmp/pcap.progress
+      - name: Validate all PCAPs
+        run: |
+          python - << 'PY'
+          import os, subprocess
+          failed = []
+          for root, _, files in os.walk('protocols'):
+              for f in files:
+                  if f.endswith('.pcap'):
+                      proto = os.path.splitext(f)[0].replace('_standard','')
+                      path = os.path.join(root, f)
+                      r = subprocess.run(['python','tools/validators/validate_pcap.py', path, proto], capture_output=True, text=True)
+                      if 'VALID' not in r.stdout:
+                          failed.append((path, r.stdout))
+          if failed:
+              print('Validation failures:')
+              for p, out in failed:
+                  print(p, out)
+              raise SystemExit(1)
+          PY
+      - name: Update documentation
+        run: python tools/update_docs.py
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Auto-update: Generate and validate PCAPs" || exit 0
+          git push

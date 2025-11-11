@@ -18,8 +18,11 @@ import argparse
 import json
 import importlib
 import sys
+import shutil
+import os
 from pathlib import Path
 from typing import Dict, List, Set
+from datetime import datetime
 
 # 确保项目根目录在 sys.path 中，便于以包形式导入 scripts.builders
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -27,6 +30,7 @@ if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
 
 from scapy.packet import Packet
+from scapy.all import rdpcap
 
 
 def list_scapy_layers() -> List[str]:
@@ -94,13 +98,116 @@ LAYER_TO_PROTO = {
     "MDNS": "mdns",
 }
 
+# 协议到 OSI 层的映射（用于标准输出路径）
+PROTO_TO_LAYER = {
+    # 应用层
+    "http": "application",
+    "https": "application",
+    "dns": "application",
+    "ftp": "application",
+    "smtp": "application",
+    "imap": "application",
+    "pop3": "application",
+    "mqtt": "application",
+    "coap": "application",
+    "sip": "application",
+    "rtp": "application",
+    "ssdp": "application",
+    "tftp": "application",
+    "ssh": "application",
+    "smb": "application",
+    "nbns": "application",
+    "ldap": "application",
+    "radius": "application",
+    "radiusacct": "application",
+    "syslog": "application",
+    "ntp": "application",
+    "mdns": "application",
+    "llmnr": "application",
+    "nfs": "application",
+    "telnet": "application",
+    "quic": "application",
+    # 传输层
+    "tcp": "transport",
+    "udp": "transport",
+    "sctp": "transport",
+    # 网络层
+    "ipv4": "network",
+    "ipv6": "network",
+    "icmp": "network",
+    "icmpv6": "network",
+    "igmp": "network",
+    "arp": "network",
+    "gre": "network",
+    "mpls": "network",
+    "gtp": "network",
+    "gtpc": "network",
+    "l2tp": "network",
+    # 数据链路层
+    "ppp": "datalink",
+    "pppoe": "datalink",
+    "vlan": "datalink",
+    "lldp": "datalink",
+    "lacp": "datalink",
+    "stp": "datalink",
+    # 安全层
+    "tls": "security",
+    "ike": "security",
+    "openvpn": "security",
+    "wireguard": "security",
+    "kerberos": "security",
+    "tacacs": "security",  # 将 TACACS+ 归入安全
+    # 路由层
+    "bgp": "routing",
+    "ospf": "routing",
+    "rip": "routing",
+    "pim": "routing",
+    "isis": "routing",
+    "isis_clns": "routing",
+    "eigrp": "routing",
+    "vrrp": "routing",
+    "vrrpv3": "routing",
+    "hsrp": "routing",
+    "ldp": "routing",
+    # 工业/物联网可按需补充
+}
+
+
+def _standardize_and_metadata(proto: str, src_path: Path, protocols_root: Path) -> Path:
+    """将生成的文件复制到标准路径 protocols/<layer>/<proto>_standard.pcap，并生成同名 .meta.json。"""
+    layer = PROTO_TO_LAYER.get(proto, "application")
+    out_dir = protocols_root / layer
+    out_dir.mkdir(parents=True, exist_ok=True)
+    std_path = out_dir / f"{proto}_standard.pcap"
+    try:
+        shutil.copy2(src_path, std_path)
+    except Exception as e:
+        print(f"[WARN] 复制到标准路径失败 {src_path} -> {std_path}: {e}")
+        return src_path
+    # 生成元数据
+    try:
+        pkts = rdpcap(str(std_path))
+        meta = {
+            "protocol": proto,
+            "pcap_file": str(std_path),
+            "generated_at": datetime.now().isoformat(),
+            "packet_count": len(pkts),
+            "file_size": os.path.getsize(std_path),
+        }
+        with (std_path.with_suffix(std_path.suffix + ".meta.json")).open("w", encoding="utf-8") as f:
+            json.dump(meta, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        print(f"[WARN] 生成元数据失败 {std_path}: {e}")
+    return std_path
+
 
 def main():
     parser = argparse.ArgumentParser(description="按 Scapy 层枚举调用各协议构建器")
     parser.add_argument("--list-layers", action="store_true", help="仅列出可用 Scapy 层")
     parser.add_argument("--list-builders", action="store_true", help="仅列出可用构建器")
     parser.add_argument("--mode", choices=["layers", "known"], default="layers", help="驱动模式：按层枚举或仅执行已知构建器")
-    parser.add_argument("--pcaps-root", type=Path, default=(Path(__file__).resolve().parents[1] / "pcaps"), help="输出根目录")
+    parser.add_argument("--pcaps-root", type=Path, default=(Path(__file__).resolve().parents[1] / "pcaps"), help="输出根目录（兼容旧构建器输出）")
+    parser.add_argument("--protocols-root", type=Path, default=(Path(__file__).resolve().parents[1] / "protocols"), help="标准化输出根目录 protocols/")
     parser.add_argument("--progress-file", type=Path, default=None, help="增量模式下记录已生成协议的临时文件")
     parser.add_argument("--incremental", action="store_true", help="仅生成进度文件中未记录的协议，并将新生成的协议追加到进度文件")
     args = parser.parse_args()
@@ -148,7 +255,8 @@ def main():
                 continue
             try:
                 out = mod.build(args.pcaps_root)
-                generated.append(out)
+                std = _standardize_and_metadata(proto, Path(out), args.protocols_root)
+                generated.append(str(std))
                 # 追加写入进度
                 if args.incremental and args.progress_file:
                     with args.progress_file.open("a", encoding="utf-8") as pf:
@@ -173,7 +281,8 @@ def main():
             continue
         try:
             out = mod.build(args.pcaps_root)
-            generated.append(out)
+            std = _standardize_and_metadata(proto, Path(out), args.protocols_root)
+            generated.append(str(std))
             invoked.add(proto)
         except Exception as e:
             print(f"[ERROR] builder {proto} failed: {e}", file=sys.stderr)
@@ -184,7 +293,8 @@ def main():
             continue
         try:
             out = mod.build(args.pcaps_root)
-            generated.append(out)
+            std = _standardize_and_metadata(proto, Path(out), args.protocols_root)
+            generated.append(str(std))
         except Exception as e:
             print(f"[ERROR] builder {proto} failed: {e}", file=sys.stderr)
 

@@ -1,0 +1,9 @@
+{
+  "last_update": "",
+  "total_protocols": 0,
+  "completed": 0,
+  "in_progress": 0,
+  "failed": 0,
+  "pending": 0,
+  "next_batch": ["QUIC", "HTTP3", "WebRTC"]
+}
