@@ -1,0 +1,21 @@
+# Python 缓存与编译产物
+__pycache__/
+scripts/builders/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 编辑器/IDE 配置与临时文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS 特定文件
+.DS_Store
+
+# 进度/状态文件（增量生成时使用）
+*.progress
+
+# 日志文件
+*.log
